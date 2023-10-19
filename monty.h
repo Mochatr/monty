@@ -12,6 +12,7 @@
 #include <errno.h>
 #include <limits.h>
 #include <fcntl.h>
+#define _GNU_SOURCE
 
 /**
  * struct stack_s - doubly linked list representation of a stack (or queue)
