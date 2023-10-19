@@ -46,4 +46,6 @@ typedef struct instruction_s
 void push(stack_t **stack, unsigned int line_number, char *argument);
 void pall(stack_t **stack);
 
+void handle_opcode(char *line, stack_t **stack, unsigned int line_number);
+
 #endif /*MONTY_H*/
