@@ -48,6 +48,8 @@ typedef struct instruction_s
 void push(sstack_t **sstack, unsigned int line_number, char *argument);
 void pall(sstack_t **sstack);
 
+void pint(sstack_t **stack, unsigned int line_number);
+
 void handle_opcode(char *line, sstack_t **stack, unsigned int line_number);
 
 #endif /*MONTY_H*/
