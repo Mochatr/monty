@@ -30,6 +30,6 @@ void handle_opcode(char *line, sstack_t **stack, unsigned int line_number)
 	}
 	else if (strcmp(opcode, "nop") == 0)
 	{
-		nop(stack, line_number);
+		nop(stack, line_number, arg);
 	}
 }
