@@ -1,7 +1,6 @@
-             
-
 push 1
-push 4
+pint
+push 2
+pint
 push 3
-
-                 pall
+pint

@@ -24,4 +24,8 @@ void handle_opcode(char *line, sstack_t **stack, unsigned int line_number)
 	{
 		pall(stack);
 	}
+	else if (strcmp(opcode, "pint") == 0)
+	{
+		pint(stack, line_number);
+	}
 }
