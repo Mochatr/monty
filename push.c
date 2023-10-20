@@ -5,16 +5,16 @@
  * @line_number: the number
  * @argument: args
  */
-void push(stack_t **stack, unsigned int line_number, char *argument)
+void push(sstack_t **stack, unsigned int line_number, char *argument)
 {
-	stack_t *new_node;
+	sstack_t *new_node;
 
 	if (stack == NULL)
 	{
 		fprintf(stderr, "L%u: stack not found\n", line_number);
 		exit(EXIT_FAILURE);
 	}
-	new_node = malloc(sizeof(stack_t));
+	new_node = malloc(sizeof(sstack_t));
 
 	if (new_node == NULL)
 	{

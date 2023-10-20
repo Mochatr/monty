@@ -6,7 +6,7 @@
  * @stack: Double pointer to the head of the stack.
  * @line_number: Line number in the Monty byte code file.
  */
-void handle_opcode(char *line, stack_t **stack, unsigned int line_number)
+void handle_opcode(char *line, sstack_t **stack, unsigned int line_number)
 {
 	char *opcode = strtok(line, " \n\t$");
 	char *arg = strtok(NULL, " \n\t$");

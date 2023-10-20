@@ -28,7 +28,7 @@ typedef struct stack_s
 	int n;
 	struct stack_s *prev;
 	struct stack_s *next;
-} stack_t;
+} sstack_t;
 
 
 /**
@@ -42,12 +42,12 @@ typedef struct stack_s
 typedef struct instruction_s
 {
 	char *opcode;
-	void (*f)(stack_t **stack, unsigned int line_number);
+	void (*f)(sstack_t **stack, unsigned int line_number);
 } instruction_t;
 
-void push(stack_t **stack, unsigned int line_number, char *argument);
-void pall(stack_t **stack);
+void push(sstack_t **sstack, unsigned int line_number, char *argument);
+void pall(sstack_t **sstack);
 
-void handle_opcode(char *line, stack_t **stack, unsigned int line_number);
+void handle_opcode(char *line, sstack_t **stack, unsigned int line_number);
 
 #endif /*MONTY_H*/

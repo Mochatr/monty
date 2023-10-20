@@ -5,9 +5,9 @@
  * @stack: parameter
  */
 
-void pall(stack_t **stack)
+void pall(sstack_t **stack)
 {
-	stack_t *current = *stack;
+	sstack_t *current = *stack;
 
 	while (current != NULL)
 	{

@@ -7,7 +7,7 @@
  */
 int main(int argc, char *argv[])
 {
-	stack_t *stack = NULL;
+	sstack_t *stack = NULL;
 	FILE *file;
 	char line[1024];
 	unsigned int line_number = 0;
