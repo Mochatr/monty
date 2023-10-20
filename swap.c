@@ -19,7 +19,7 @@ int swap(sstack_t **stack, unsigned int line_number, char *arg)
 	{
 		y = (*stack)->n;
 		(*stack)->n = (*stack)->next->n;
-		(*stack)->next->n = tmp;
+		(*stack)->next->n = y;
 	}
 	else
 	{
