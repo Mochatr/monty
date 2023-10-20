@@ -28,8 +28,4 @@ void handle_opcode(char *line, sstack_t **stack, unsigned int line_number)
 	{
 		pint(stack, line_number);
 	}
-	else if (strcmp(opcode, "swap") == 0)
-        {
-                pint(stack, line_number);
-        }
 }
